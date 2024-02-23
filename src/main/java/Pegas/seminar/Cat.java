@@ -16,28 +16,6 @@ public class Cat extends BaseCat implements Runner{
     }
 
     @Override
-    public boolean jump(int height) {
-        if (height <= maxJump) {
-            System.out.printf("%s jump over the wall %d ink\n",getName(), height);
-            return true;
-        }else{
-            System.out.printf("%s can't jump over the wall %d ink\n",getName(), height);
-            return false;
-        }
-    }
-
-    @Override
-    public boolean run(int length) {
-        if (length <= maxRun) {
-            System.out.printf("%s jump over the wall %d ink\n",getName(), length);
-            return true;
-        }else{
-            System.out.printf("%s can't jump over the wall %d ink\n",getName(), length);
-            return false;
-        }
-    }
-
-    @Override
     public void setName(String name) {
         if (name.isEmpty() || name.length() < 3) {
             throw new RuntimeException("Empty name");

@@ -55,26 +55,4 @@ public class Human extends BaseHuman implements Runner{
                 ", maxJump=" + maxJump +
                 '}';
     }
-
-    @Override
-    public boolean jump(int height) {
-        if (height <= maxJump) {
-            System.out.printf("%s jump over the wall %d ink\n",getName(), height);
-            return true;
-        }else{
-            System.out.printf("%s can't jump over the wall %d ink\n",getName(), height);
-            return false;
-        }
-    }
-
-    @Override
-    public boolean run(int length) {
-        if (length <= maxRun) {
-            System.out.printf("%s jump over the wall %d ink\n",getName(), length);
-            return true;
-        }else{
-            System.out.printf("%s can't jump over the wall %d ink\n",getName(), length);
-            return false;
-        }
-    }
 }
