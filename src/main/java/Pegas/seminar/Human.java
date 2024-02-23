@@ -4,7 +4,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
-@Data()
+@Data
 public class Human extends BaseHuman implements Runner{
     private int maxRun;
     private int maxJump;

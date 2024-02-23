@@ -9,7 +9,7 @@ public interface Runner {
             System.out.printf("%s jump over the wall %d ink\n",getName(), height);
             return true;
         }else{
-            System.out.printf("%s can't jump over the wall %d ink\n",name, height);
+            System.out.printf("%s can't jump over the wall %d ink\n",getName(), height);
             return false;
         }
     }
